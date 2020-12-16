@@ -2126,6 +2126,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
       height: 100%;
       top: 0;
       left: 0;
+      display: flex;
       position: fixed !important;
     }
 
@@ -2135,7 +2136,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
       height: 50%;
       margin: auto;
       position: absolute;
-      top: 100px;
+      top: 0%;
       left: 0;
       bottom: 0;
       right: 0;
@@ -2163,29 +2164,36 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
       color: white;
       letter-spacing: 0.1em;
       opacity: 0.8;
+      display: inline-flex;
+      align-content: center;
     }
 
     #clockdiv {
       font-family: sans-serif;
       color: #fff;
-      display: inline-block;
       font-weight: 200;
       text-align: center;
       font-size: 40px;
+      margin-bottom: 5px;
+      padding-bottom: 42%;
+      display: grid;
+      grid-auto-columns: auto;
+      grid-template-columns: repeat(4, 25%);
     }
 
     #clockdiv>div {
       padding: 20px;
       border-radius: 5px;
       background: rgba(100, 40, 40, 0.9);
-      display: inline-block;
+      
     }
 
     #clockdiv div>span {
       padding: 15px;
       border-radius: 3px;
       background: rgba(100, 0, 0, 0.8);
-      display: inline-block;
+      display: inline-flex;
+      margin: 0 auto;
     }
 
     .smalltext {
