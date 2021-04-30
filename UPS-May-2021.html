@@ -1,0 +1,58 @@
+<!-- Courtesy: http://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Directions and coupons">
+
+  <title>The UPS Store</title>
+
+</head>
+<body>
+<div class="grid-container">
+  <div class="iframe" align-content="center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.7529304279215!2d-71.11199338441453!3d42.36910444252289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3775a9a9e6a93%3A0xe672f2212843b717!2sThe%20UPS%20Store!5e0!3m2!1sen!2sus!4v1619791421457!5m2!1sen!2sus" loading="lazy" max-height="100%" width="80%" align-content="center">
+      </iframe>
+  </div>
+  <div class="coupons">
+    <img src="https://res.cloudinary.com/damhqeet7/image/upload/v1619789192/may2021coupon_nmax1n.png" max-height="100%" width="80%">
+  </div>
+</div>
+<style>html, body, .grid-container { height: 100%; margin: 0; background-color:black;}
+
+.grid-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  gap: 2% 2%;
+  grid-template-areas:
+    ". . ."
+    ". iframe ."
+    ". coupons ."
+    ". . .";
+}
+
+.coupons { grid-area: coupons; }
+
+.iframe { grid-area: iframe; }
+
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+  
+  position: relative;
+  align-content: center;
+}
+
+.grid-container *:after {
+  content:attr(class);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+</style>
+</body>
+</html>
