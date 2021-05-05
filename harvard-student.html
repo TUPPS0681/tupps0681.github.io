@@ -1,0 +1,95 @@
+<html>
+<body>
+  <div class="coupons" min-width="300" min-height="300">
+    <img src="https://res.cloudinary.com/damhqeet7/image/upload/v1619789192/may2021coupon_nmax1n.png" height="50%" width="50%" justify-items: "center" align-content:"center">
+  </div>
+</div>
+
+<div class="grid-container">
+    <div class="Logo-masthead"></div>
+    <div class="maps"></div>
+    <div class="coupon1"></div>
+    <div class="coupon2"></div>
+  </div>
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 0% 0%;
+    grid-template-areas:
+      "Logo-masthead"
+      "maps"
+      "coupon1"
+      "coupon2";
+  }
+  .Logo-masthead { grid-area: Logo-masthead; }
+  .maps { grid-area: maps; }
+  .coupon1 { grid-area: coupon1; }
+  .coupon2 { grid-area: coupon2; }
+
+  <div class="grid-container">
+    <div class="Logo-masthead"></div>
+    <div class="maps"></div>
+    <div class="coupon1"></div>
+    <div class="coupon2"></div>
+    <div class="harvard"></div>
+    <div class="coupon1b"></div>
+    <div class="coupon2b"></div>
+  </div>
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 0% 0%;
+    grid-template-areas:
+      "Logo-masthead ."
+      "maps harvard"
+      "coupon1 coupon1b"
+      "coupon2 coupon2b";
+  }
+  .Logo-masthead { grid-area: Logo-masthead; }
+  .maps { grid-area: maps; }
+  .coupon1 { grid-area: coupon1; }
+  .coupon2 { grid-area: coupon2; }
+  .harvard { grid-area: harvard; }
+  .coupon1b { grid-area: coupon1b; }
+  .coupon2b { grid-area: coupon2b; }
+  
+
+
+
+
+
+
+
+
+
+<div class="centered">
+    <section class="cards">
+        <article class="card">
+            
+        </article>
+        <article class="card"><img></article>
+        <article class="card"><img></article>
+        <article class="card"><img></article>
+        <article class="card"><img></article>
+    </section>
+</div>
+
+<style>
+    .cards{
+        display:flex;
+        justify-content: space-between;
+    img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+    }
+</style>
+</body>
+</html>
+
